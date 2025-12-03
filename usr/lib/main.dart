@@ -3,6 +3,7 @@ import 'screens/home_screen.dart';
 import 'screens/services_screen.dart';
 import 'screens/events_screen.dart';
 import 'screens/contact_screen.dart';
+import 'screens/about_screen.dart';
 
 void main() {
   runApp(const OurCentreApp());
@@ -27,6 +28,7 @@ class OurCentreApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const MainNavigationScaffold(),
+        '/about': (context) => const AboutScreen(),
       },
     );
   }
